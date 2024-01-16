@@ -224,4 +224,9 @@ class JMDict {
       ),
     );
   }
+  
+  /// Get entry by id
+  JMDictEntry? searchById(int id) {
+    return _store.box<JMDictEntryImpl>().get(id);
+  }
 }
