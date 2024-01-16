@@ -270,6 +270,8 @@ enum SenseLanguage {
   hun,  /// Hungarian
   slv,  /// Slovenian
   dut,  /// Dutch
+  fre,
+  swe
 }
 
 enum SourceLanguageType {
