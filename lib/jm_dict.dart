@@ -227,6 +227,9 @@ class JMDict {
   
   /// Get entry by id
   JMDictEntry? searchById(int id) {
+    if(!_isInitialized) {
+      return null;
+    }
     return _store.box<JMDictEntryImpl>().get(id);
   }
 }
